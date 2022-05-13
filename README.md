@@ -13,7 +13,7 @@
 
  <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/ProDevDesign/prodevdesign.github.io">
     <img src="github-readme.png" alt="Screenshot">
   </a>
 
