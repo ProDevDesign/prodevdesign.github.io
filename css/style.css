@@ -146,11 +146,17 @@ nav {
   cursor: pointer;
   width: 5.4rem;
   height: 5.4rem;
+  transition: all 0.3s;
 }
 
 .light-mode-icon {
   transform: scale(330%);
   color: #212529;
+}
+
+.light-mode-button:hover,
+.light-mode-button:active {
+  box-shadow: 0 0 0 3px #212529;
 }
 
 /* ############## */
@@ -237,6 +243,12 @@ nav {
   padding: 1.8rem 3rem;
   border-radius: 25px;
   margin-right: 1.2rem;
+  transition: all 0.3s;
+}
+
+.btn--hero-2:hover,
+.btn--hero-2:active {
+  box-shadow: 0 0 0 3px #adadad;
 }
 
 .hero-img {
