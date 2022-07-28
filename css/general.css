@@ -5,6 +5,23 @@
   margin: 0 auto;
 }
 
+img {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  background: #e2cef7;
+}
+
+::selection {
+  background: #e2cef77e;
+}
+
 .grid {
   display: grid;
   column-gap: 6.4rem;
