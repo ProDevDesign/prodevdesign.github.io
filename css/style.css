@@ -172,7 +172,8 @@ nav {
   padding: 4.8rem 0 9.6rem 0;
   /* gap: 5.6rem; */
   /* border-bottom: 1px solid #ddd; */
-  margin-top: 2.4rem;
+  /* margin-top: 2.4rem; */
+  /* margin-bottom: 9.6rem; */
   display: inline-block;
 }
 
@@ -278,8 +279,9 @@ nav {
 /* ############## */
 
 .about-me {
-  margin-top: 9.6rem;
-  margin-bottom: 9.6rem;
+  padding: 16.8rem 0 9.6rem 0;
+  /* margin-top: 9.6rem; */
+  /* margin-bottom: 9.6rem; */
   gap: 3.2rem;
   display: inline-block;
 }
@@ -456,6 +458,8 @@ nav {
 
 .about-me--main-text {
   font-size: 3rem;
+  font-weight: 400;
+  color: #343a40;
   text-align: center;
   display: flex;
   align-items: center;
@@ -492,10 +496,10 @@ nav {
 /* ############## */
 
 .blog {
-  /* padding: 4.8rem 0 9.6rem 0; */
+  padding: 9.6rem 0 9.6rem 0;
   /* gap: 5.6rem; */
-  margin-top: 9.6rem;
-  margin-bottom: 9.6rem;
+  /* margin-top: 9.6rem;
+  margin-bottom: 9.6rem; */
   display: inline-block;
 }
 
