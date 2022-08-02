@@ -51,6 +51,8 @@ Default - 9px
 Medium - 11px
 Big - 16px
 
+Blog-section-card - 24px
+
 --- 07 WHITESPACE ---
 
 - SPACING SYSTEM (px)
@@ -72,6 +74,7 @@ body {
   font-family: "Satoshi", sans-serif;
   line-height: 1;
   font-weight: 400;
+  /* background-color: #000; */
 }
 
 .container {
@@ -168,8 +171,9 @@ nav {
 .hero {
   padding: 4.8rem 0 9.6rem 0;
   /* gap: 5.6rem; */
-  border-bottom: 1px solid #ddd;
-  margin-top: 1.8rem;
+  /* border-bottom: 1px solid #ddd; */
+  margin-top: 2.4rem;
+  display: inline-block;
 }
 
 .hero--grid {
@@ -270,25 +274,234 @@ nav {
 }
 
 /* ############## */
+/* ABOUT ME         */
+/* ############## */
+
+.about-me {
+  margin-top: 9.6rem;
+  margin-bottom: 9.6rem;
+  gap: 3.2rem;
+  display: inline-block;
+}
+
+.about-me-grid {
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  gap: 9.6rem;
+}
+
+.about-me-left {
+  background-color: #f4f6f8;
+  border-radius: 36px;
+  position: relative;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.03);
+  /* border: 0.1px solid #3fbbfe; */
+}
+
+.about-me--img img {
+  display: inline-block;
+  width: 45%;
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  position: absolute;
+  top: -25%;
+  border: 8px solid #fff;
+}
+
+.about-me--name {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 18%;
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #212529;
+}
+
+.about-me--sub-content {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  color: #6f6f6f;
+  font-size: 2.2rem;
+  padding: 1.6rem 5.6rem;
+  text-align: center;
+}
+
+.about-me--location {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  color: #212529;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 3.6rem;
+}
+
+.about-me--card-text {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 2.3rem;
+  padding: 0rem 5.6rem;
+  margin-bottom: 5.6rem;
+  text-align: center;
+  color: #212529;
+  margin-bottom: 15%;
+}
+
+.about-me--card-social-bar {
+  display: inline-block;
+  background-color: #f3eafb;
+  margin-bottom: 12%;
+  width: 80%;
+  padding: 1.2rem;
+  border-radius: 16px;
+  position: absolute;
+  bottom: -23%;
+  left: 10%;
+}
+
+.about-me--card-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  color: #700bd5;
+}
+
+.about-me--card-socials .fb {
+  cursor: pointer;
+  font-size: 3.6rem;
+  transition: all 0.3s;
+}
+.about-me--card-socials .ig {
+  font-size: 4.6rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.about-me--card-socials .twitter {
+  font-size: 4.6rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.about-me--card-socials .dc {
+  font-size: 4.6rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.about-me--card-socials .fb:hover,
+.about-me--card-socials .fb:active {
+  color: #4dabf7;
+}
+.about-me--card-socials .ig:hover,
+.about-me--card-socials .ig:active {
+  color: #4dabf7;
+}
+.about-me--card-socials .twitter:hover,
+.about-me--card-socials .twitter:active {
+  color: #4dabf7;
+}
+.about-me--card-socials .dc:hover,
+.about-me--card-socials .dc:active {
+  color: #4dabf7;
+}
+
+.about-me--img {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 3.6rem;
+}
+
+.about-me-right {
+  padding: 0 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-me--heading {
+  margin-bottom: 0.8rem;
+}
+
+.about-me--heading::after {
+  content: "About me";
+  font-size: 1.6rem;
+  background-color: #e2cef7;
+  font-weight: 600;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: #700bd5;
+  padding: 1rem;
+  margin-bottom: -1.2rem;
+}
+
+.about-me--header {
+  font-size: 4.8rem;
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 5.6rem;
+}
+
+.about-me--main-text {
+  font-size: 2.8rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4.8rem;
+}
+
+.btn--about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn--about-me:link,
+.btn--about-me:visited {
+  display: inline-block;
+  font-size: 2.4rem;
+  color: #700bd5;
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+  border-radius: 2px;
+  padding-bottom: 8px;
+  transition: all 0.3s;
+}
+
+.btn--about-me:hover,
+.btn--about-me:active {
+  color: #4e0895;
+  border-radius: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+/* ############## */
 /* BLOG         */
 /* ############## */
 
 .blog {
-  padding: 4.8rem 0 9.6rem 0;
+  /* padding: 4.8rem 0 9.6rem 0; */
   /* gap: 5.6rem; */
-  margin-top: 4.8rem;
+  margin-top: 9.6rem;
+  margin-bottom: 9.6rem;
+  display: inline-block;
 }
 
 .blog h2 {
   font-size: 4.8rem;
-  margin-bottom: 9.6rem;
+  margin-bottom: 8rem;
 }
 
 .blog .grid {
   column-gap: 3.6rem;
 }
 
-.small-heading {
+.blog .small-heading::after {
+  content: "Blog";
   font-size: 1.6rem;
   background-color: #e2cef7;
   font-weight: 600;
