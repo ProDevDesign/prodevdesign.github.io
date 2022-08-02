@@ -364,9 +364,8 @@ nav {
 
 .about-me--card-socials {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 1.2rem;
   color: #700bd5;
 }
 
@@ -390,6 +389,11 @@ nav {
   cursor: pointer;
   transition: all 0.3s;
 }
+.about-me--card-socials .git {
+  font-size: 4.6rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
 
 .about-me--card-socials .fb:hover,
 .about-me--card-socials .fb:active {
@@ -405,6 +409,10 @@ nav {
 }
 .about-me--card-socials .dc:hover,
 .about-me--card-socials .dc:active {
+  color: #4dabf7;
+}
+.about-me--card-socials .git:hover,
+.about-me--card-socials .git:active {
   color: #4dabf7;
 }
 
@@ -447,7 +455,7 @@ nav {
 }
 
 .about-me--main-text {
-  font-size: 2.8rem;
+  font-size: 3rem;
   text-align: center;
   display: flex;
   align-items: center;
